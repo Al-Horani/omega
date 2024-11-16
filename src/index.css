@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color:#f1efee;
+  --background-color-two:#FFFFFF;
+
+  --box-background:#fbfbfb;
+  --primary-color:#ff7300;
+  --lll:#A0D8E1;
+  --bg:#F9FAFB;
+  --mcolor:#095E99;
+
+}
+
+* {
+  font-family: "Tajawal", sans-serif;
+  /* font-family: "Almarai", sans-serif; */
+  /* font-family: "Cairo", sans-serif; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  
+}
+
+.storage-bg {
+  background: radial-gradient(circle, rgba(211,227,253,1) 21%, rgba(225,227,225,1) 100%, rgba(10,10,10,1) 100%);
+}
+
+input::placeholder {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+input {
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+.bm {
+  background-color: var(--mcolor);
+}
+
+.caret-color {
+  color: var(--mcolor);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.border-bottom-main-icon {
+  border-bottom:2px solid var(--primary-color);
+ 
+}
+
+.c {
+  color: var(--mcolor);
+}
+
+
+body {
+  background-color: var(--bg);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.bg-icon {
+  background-color:var(--box-background) ;
+  border-radius: 2px;
+  padding: 8px;
+ 
+}
+
+.cr {
+  width: 340px;
+  height: 80px;
+  background-color: var(--box-background);
+  border-radius: 14px;
+  position: relative;
+}
+
+.cr::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: var(--primary-color);
+  border-radius: 0 14px 14px 0;
+}
+
+.lo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ss {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  
+
+}
